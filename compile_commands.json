@@ -1,0 +1,34 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/src/geometry.o",
+      "src/geometry.cpp"
+    ],
+    "directory": "/home/andhikar/projects/Graphics-Engine-1D",
+    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/geometry.cpp",
+    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/geometry.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/main.o",
+      "main.cpp"
+    ],
+    "directory": "/home/andhikar/projects/Graphics-Engine-1D",
+    "file": "/home/andhikar/projects/Graphics-Engine-1D/main.cpp",
+    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/main.o"
+  }
+]
