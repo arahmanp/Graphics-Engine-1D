@@ -8,12 +8,92 @@
       "-Iinclude",
       "-c",
       "-o",
+      "build/src/camera.o",
+      "src/camera.cpp"
+    ],
+    "directory": "/home/andhikar/projects/Graphics-Engine-1D",
+    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/camera.cpp",
+    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/camera.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/src/display.o",
+      "src/display.cpp"
+    ],
+    "directory": "/home/andhikar/projects/Graphics-Engine-1D",
+    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/display.cpp",
+    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/display.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-c",
+      "-o",
       "build/src/geometry.o",
       "src/geometry.cpp"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
     "file": "/home/andhikar/projects/Graphics-Engine-1D/src/geometry.cpp",
     "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/geometry.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/src/object.o",
+      "src/object.cpp"
+    ],
+    "directory": "/home/andhikar/projects/Graphics-Engine-1D",
+    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/object.cpp",
+    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/object.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/src/object_list.o",
+      "src/object_list.cpp"
+    ],
+    "directory": "/home/andhikar/projects/Graphics-Engine-1D",
+    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/object_list.cpp",
+    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/object_list.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++20",
+      "-Wall",
+      "-Wextra",
+      "-Iinclude",
+      "-c",
+      "-o",
+      "build/src/renderer.o",
+      "src/renderer.cpp"
+    ],
+    "directory": "/home/andhikar/projects/Graphics-Engine-1D",
+    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/renderer.cpp",
+    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/renderer.o"
   },
   {
     "arguments": [
