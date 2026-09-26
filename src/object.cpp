@@ -21,3 +21,29 @@ void Object::scale(double factor) {
             static_cast<LineSegment*>(g_object)->g_scale(factor);
     }
 }
+
+Object create_point(std::string name, double x, char texture) {
+    Point *point = new Point(x);
+
+    Object obj = {
+        name,
+        ObjType::Point,
+        texture,
+        static_cast<void*>(point),
+    };
+
+    return obj;
+}
+
+Object create_line_segment(std::string name, double a, double b, char texture) {
+    LineSegment *line = new LineSegment(a, b);
+
+    Object obj = {
+        name,
+        ObjType::LineSegment,
+        texture,
+        static_cast<void*>(line),
+    };
+
+    return obj;
+}
