@@ -1,12 +1,11 @@
 #include "display.hpp"
-#include <cstddef>
 #include <iostream>
 
-Display::Display(size_t size, char background) : size(size), background(background), 
+Display::Display(int size, char background) : size(size), background(background), 
     display(size, background) {}
 
-void Display::draw_pixel(size_t index, char texture) {
-    if(index < size) {
+void Display::draw_pixel(int index, char texture) {
+    if(0 <= index && index < size) {
         display[index] = texture;
     }
 }

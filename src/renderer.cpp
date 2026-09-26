@@ -2,7 +2,6 @@
 #include "geometry.hpp"
 #include "object.hpp"
 #include <cmath>
-#include <cstddef>
 #include <iostream>
 
 void render(Display &display, const Camera &camera, const ObjectList &object_list) {
@@ -12,7 +11,7 @@ void render(Display &display, const Camera &camera, const ObjectList &object_lis
         switch (obj.type) {
             case ObjType::Point: {
                 Point *point = static_cast<Point*>(obj.g_object);
-                size_t pixel_index = round(point->x - camera.position);
+                int pixel_index = round(point->x - camera.position);
                 display.draw_pixel(pixel_index, obj.texture);
 
                 break;
@@ -24,10 +23,10 @@ void render(Display &display, const Camera &camera, const ObjectList &object_lis
                 double start = (line->a < line->b) ? line->a : line->b;
                 double end = (line->a < line->b) ? line->b : line->a;
 
-                size_t lower_bound = round(start - camera.position);
-                size_t upper_bound = round(end - camera.position);
+                int lower_bound = round(start - camera.position);
+                int upper_bound = round(end - camera.position);
 
-                for(size_t i = lower_bound; i <= upper_bound; i++) {
+                for(int i = lower_bound; i <= upper_bound; i++) {
                     display.draw_pixel(i, obj.texture);
                 }
             }
