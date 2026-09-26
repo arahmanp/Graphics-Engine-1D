@@ -8,7 +8,7 @@ INC_DIR := include
 OBJ_DIR := build
 
 # File Target Executable
-TARGET := engine_1d
+TARGET := engine_1d.out
 
 # Otomatis cari semua file .cpp di src/ dan tambahkan main.cpp
 SRCS := $(wildcard $(SRC_DIR)/*.cpp) main.cpp
