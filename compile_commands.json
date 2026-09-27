@@ -1,5 +1,6 @@
 [
   {
+    "file": "src/camera.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-std=c++20",
@@ -7,15 +8,15 @@
       "-Wextra",
       "-Iinclude",
       "-c",
+      "src/camera.cpp",
       "-o",
-      "build/src/camera.o",
-      "src/camera.cpp"
+      "build/src/camera.o"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
-    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/camera.cpp",
-    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/camera.o"
+    "output": "build/src/camera.o"
   },
   {
+    "file": "src/display.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-std=c++20",
@@ -23,15 +24,15 @@
       "-Wextra",
       "-Iinclude",
       "-c",
+      "src/display.cpp",
       "-o",
-      "build/src/display.o",
-      "src/display.cpp"
+      "build/src/display.o"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
-    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/display.cpp",
-    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/display.o"
+    "output": "build/src/display.o"
   },
   {
+    "file": "src/geometry.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-std=c++20",
@@ -39,15 +40,15 @@
       "-Wextra",
       "-Iinclude",
       "-c",
+      "src/geometry.cpp",
       "-o",
-      "build/src/geometry.o",
-      "src/geometry.cpp"
+      "build/src/geometry.o"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
-    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/geometry.cpp",
-    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/geometry.o"
+    "output": "build/src/geometry.o"
   },
   {
+    "file": "src/object.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-std=c++20",
@@ -55,15 +56,15 @@
       "-Wextra",
       "-Iinclude",
       "-c",
+      "src/object.cpp",
       "-o",
-      "build/src/object.o",
-      "src/object.cpp"
+      "build/src/object.o"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
-    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/object.cpp",
-    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/object.o"
+    "output": "build/src/object.o"
   },
   {
+    "file": "src/object_list.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-std=c++20",
@@ -71,15 +72,15 @@
       "-Wextra",
       "-Iinclude",
       "-c",
+      "src/object_list.cpp",
       "-o",
-      "build/src/object_list.o",
-      "src/object_list.cpp"
+      "build/src/object_list.o"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
-    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/object_list.cpp",
-    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/object_list.o"
+    "output": "build/src/object_list.o"
   },
   {
+    "file": "src/renderer.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-std=c++20",
@@ -87,15 +88,15 @@
       "-Wextra",
       "-Iinclude",
       "-c",
+      "src/renderer.cpp",
       "-o",
-      "build/src/renderer.o",
-      "src/renderer.cpp"
+      "build/src/renderer.o"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
-    "file": "/home/andhikar/projects/Graphics-Engine-1D/src/renderer.cpp",
-    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/src/renderer.o"
+    "output": "build/src/renderer.o"
   },
   {
+    "file": "main.cpp",
     "arguments": [
       "/usr/bin/g++",
       "-std=c++20",
@@ -103,12 +104,11 @@
       "-Wextra",
       "-Iinclude",
       "-c",
+      "main.cpp",
       "-o",
-      "build/main.o",
-      "main.cpp"
+      "build/main.o"
     ],
     "directory": "/home/andhikar/projects/Graphics-Engine-1D",
-    "file": "/home/andhikar/projects/Graphics-Engine-1D/main.cpp",
-    "output": "/home/andhikar/projects/Graphics-Engine-1D/build/main.o"
+    "output": "build/main.o"
   }
 ]
