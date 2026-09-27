@@ -1,12 +1,12 @@
 #include "geometry.hpp"
 
-Point::Point(double x) : x(x) {}
+Point::Point(double x, double z) : x(x), z(z) {}
 
 void Point::g_translate(double distance) {
     x += distance;
 }
 
-LineSegment::LineSegment(double a, double b) : a(a), b(b) {}
+LineSegment::LineSegment(double a, double b, double z_a, double z_b) : a(a), b(b), z_a(z_a), z_b(z_b) {}
 
 void LineSegment::g_translate(double distance) {
     a += distance;
