@@ -12,7 +12,8 @@ void render(Display &display, const Camera &camera, const ObjectList &object_lis
             case ObjType::Point: {
                 Point *point = static_cast<Point*>(obj.g_object);
                 int pixel_index = round(point->x - camera.position);
-                display.draw_pixel(pixel_index, obj.texture);
+                double z_pixel = point->z;
+                display.draw_pixel(pixel_index, obj.texture, z_pixel);
 
                 break;
             }
@@ -27,7 +28,9 @@ void render(Display &display, const Camera &camera, const ObjectList &object_lis
                 int upper_bound = round(end - camera.position);
 
                 for(int i = lower_bound; i <= upper_bound; i++) {
-                    display.draw_pixel(i, obj.texture);
+                    double t = (double)i / (upper_bound - lower_bound + 1);
+                    double z_pixel = line->z_a + t * (line->z_b - line->z_a);
+                    display.draw_pixel(i, obj.texture, z_pixel);
                 }
             }
         }
