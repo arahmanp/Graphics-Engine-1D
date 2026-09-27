@@ -26,10 +26,10 @@ void render(Display &display, const Camera &camera, const ObjectList &object_lis
 
                 int lower_bound = round(start - camera.position);
                 int upper_bound = round(end - camera.position);
-                int len = upper_bound - lower_bound + 1;
+                int len = upper_bound - lower_bound;
 
                 for(int i = lower_bound; i <= upper_bound; i++) {
-                    double t = (double)i / len;
+                    double t = static_cast<double>(i - lower_bound) / len;
                     double z_pixel = line->z_a + t * (line->z_b - line->z_a);
                     display.draw_pixel(i, obj.texture, z_pixel);
                 }
